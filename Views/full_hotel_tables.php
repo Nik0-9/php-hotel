@@ -1,7 +1,7 @@
 <?php
 $template = '';
 
-foreach($hotels as $hotel) {
+foreach($filt_hotel as $hotel) {
     $template .= "<tr> <td>{$hotel['name']}</td> <td>{$hotel['description']}</td> <td>{$hotel['parking']}</td> <td>{$hotel['vote']}</td> <td>{$hotel['distance_to_center']}</td> </tr>";
 }
 ?>
@@ -17,6 +17,6 @@ foreach($hotels as $hotel) {
         </tr>
     </thead>
     <tbody>
-        <?php echo $template; ?>
+        <?= $template; ?>
     </tbody>
 </table>
