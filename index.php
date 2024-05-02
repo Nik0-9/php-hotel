@@ -4,13 +4,13 @@ include __DIR__ . "/Models/hotels.php";
 if (getParking() && getVote()) {
     $parking = $_GET["parking"];
     $vote = $_GET["vote"];
-    $filt_hotel = array_filter($hotels, function($hotel) use ($parking){
+    $filt_park = array_filter($hotels, function($hotel) use ($parking){
     return $hotel["parking"] == $parking || $parking == "all";
     });
-    $filt_hotel = array_filter($filt_hotel, function($hotel) use ($vote){
+    $filt_vote = array_filter($filt_park, function($hotel) use ($vote){
         return $hotel["vote"] >= $vote || $vote == "all";});
 } else {
-    $filt_hotel = $hotels;
+    $filt_vote = $hotels;
 };
 function getParking(){
     if((!empty($_GET["parking"]) || (isset($_GET["parking"]) && $_GET["parking"] == 0))) {
