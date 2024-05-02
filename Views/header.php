@@ -28,12 +28,12 @@
                     </select>
                     <h5 class="me-2">voto</h5>
                     <select name="vote" class="me-2">
-                        <option value="all">voti</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+                        <option value="all">Tutti</option>
+                        <option value="1">1 stella</option>
+                        <option value="2">2 stelle</option>
+                        <option value="3">3 stelle</option>
+                        <option value="4">4 stelle</option>
+                        <option value="5">5 stelle</option>
                     </select>
                     <button type="submit">Search</button>
                 </div>
