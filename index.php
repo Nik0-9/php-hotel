@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . "/Models/hotels.php";
 //var_dump($hotels);
-if (getParking() && !empty($_GET["vote"]) || getVote()) {
+if (getParking() && getVote()) {
     $parking = $_GET["parking"];
     $vote = $_GET["vote"];
     $filt_hotel = array_filter($hotels, function($hotel) use ($parking){
