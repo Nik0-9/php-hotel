@@ -10,6 +10,8 @@
     <div class="container">
         <h1>Hotels</h1>
     </div>
+
+    
     
 </body>
 </html>
