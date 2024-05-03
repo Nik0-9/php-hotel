@@ -1,6 +1,9 @@
 <?php
 session_start();
 
+if(isset($_SESSION["userId"])){
+    header("Location: index.php");
+}
 include __DIR__ . "/../Models/users.php";
 
 if (!empty($_POST['email']) && !empty($_POST['password'])){
@@ -8,6 +11,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])){
     $password = $_POST['password'];
     $authenticated = array_filter($users, function($user) use($email, $password){
         return $user['email'] == $email && $user['password'] == $password;
+        
 });
 if(count($authenticated) > 0){
     $user = array_shift( $authenticated );
@@ -15,6 +19,6 @@ if(count($authenticated) > 0){
     $_SESSION['name'] = $user['name'];
     header('Location: index.php');
     }else{
-    //errore
+    header('Location: login.php?error=1');
     }
 }
