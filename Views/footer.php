@@ -1,8 +1,8 @@
 </body>
-<header>
-    <div class="container text-center ">
+<footer>
+    <div class="container text-center text-black">
         <h5>made with &hearts; by Niko </h5>
     </div>
-</header>
+</footer>
 
 </html>

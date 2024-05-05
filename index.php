@@ -12,10 +12,11 @@ include __DIR__ . "/Views/header.php";
 ?>
 <main class="container">
     <div class="d-flex justify-content-between ">
-        <h4>Benvenuto <?= $_SESSION['name'] ?></h4>
-        <a href="logout.php" class="btn btn-danger ">Logout</a>
+        <h4 class="text-black">Benvenuto <?= $_SESSION['name'] ?></h4>
+        <a href="logout.php" class="btn btn-outline-danger bg-black">Logout</a>
     </div>
-     <?php
+
+    <?php
     include __DIR__ . "/Views/full_hotel_tables.php";
     ?> 
     

@@ -19,13 +19,15 @@ include __DIR__ . "/./Controllers/auth.php";
 </head>
 
 <body>
-    <main>
+    <main class="container py-4 my-4">
         <?php
-        if(!empty($_GET['error'])){
-            echo '<div class="alert alert-danger">Credenziali sbagliate</div>';
+        if (!empty($_GET['error'])) {
+            echo '<div class="alert alert-danger text-center w-50 mx-auto">
+                    Credenziali sbagliate. Email o password non trovati
+                </div>';
         }
         ?>
-        <div class="d-flex justify-content-center align-items-center mycard mt-5">
+        <div class="d-flex justify-content-center align-items-center mycard mt-4">
             <form id="loginform" action="login.php" method="POST">
                 <img class="mb-4" src="./images/logo.png" alt="logo">
                 <h1 class=" mb-3 text-white">Please sign in</h1>

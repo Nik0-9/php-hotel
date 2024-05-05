@@ -17,28 +17,35 @@
 <body>
     <header>
         <div class="container my-3">
-            <h1 class="text-center">Hotels</h1>
-            <?php if (isset($_SESSION["userId"])): ?>
-                <form action="index.php" method="GET">
-                    <div class="d-flex justify-content-center mb-3">
-                        <h5 class="me-2">Filtra: parcheggio</h5>
-                        <select name="parking" class="me-2">
-                            <option value="all">con parcheggio e senza </option>
-                            <option value="0">senza parcheggio</option>
-                            <option value="1">con parcheggio</option>
-                        </select>
-                        <h5 class="me-2">voto</h5>
-                        <select name="vote" class="me-2">
-                            <option value="all">Tutti</option>
-                            <option value="1">1 stella</option>
-                            <option value="2">2 stelle</option>
-                            <option value="3">3 stelle</option>
-                            <option value="4">4 stelle</option>
-                            <option value="5">5 stelle</option>
-                        </select>
-                        <button type="submit">Search</button>
-                    </div>
-                </form>
+            <div class="title-form">
+                <h1 class="text-center text-white">Hotels</h1>
+                <?php if (isset($_SESSION["userId"])): ?>
+                    <form action="index.php" method="GET">
+                        <div class="d-flex justify-content-around mb-3 pb-3">
+                            <div>
+                                <h5 class="me-2">Filtra: parcheggio</h5>
+                                <select name="parking" class="me-2">
+                                    <option value="all">con parcheggio e senza </option>
+                                    <option value="0">senza parcheggio</option>
+                                    <option value="1">con parcheggio</option>
+                                </select>
+                            </div>
+                            <div>
+                                <h5 class="me-2">Stelle</h5>
+                                <select name="vote" class="me-2">
+                                    <option value="all">Tutti</option>
+                                    <option value="1">1 stella</option>
+                                    <option value="2">2 stelle</option>
+                                    <option value="3">3 stelle</option>
+                                    <option value="4">4 stelle</option>
+                                    <option value="5">5 stelle</option>
+                                </select>
+
+                            </div>
+                            <button type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
             <?php endif; ?>
         </div>
     </header>

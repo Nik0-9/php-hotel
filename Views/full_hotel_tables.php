@@ -1,5 +1,5 @@
 
-<table class="table table-striped mycard">
+<table class="styled-table mylist">
     <thead>
         <tr>
             <th scope="col">Hotel name</th>
