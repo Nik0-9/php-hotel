@@ -74,3 +74,11 @@ function getHotels($hotels)
     }
     return $filt_vote;
 }
+
+function getHotelByName($hotels){
+    $hotelName = array_filter($hotels, function($item){
+        return $item["name"] == $_GET['name'];
+    });
+    $detail = array_shift($hotelName);
+    return $detail;
+}

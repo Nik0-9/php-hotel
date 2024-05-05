@@ -50,3 +50,10 @@ main img{
 td, th{
     padding: 10px;
 }
+
+.belvedere{
+    background-image: url('../images/images-belvedere.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
