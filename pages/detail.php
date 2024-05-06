@@ -2,6 +2,7 @@
 <?php
 include __DIR__ . "/../Models/hotels.php";
 $details = getHotelByName($hotels);
+
 include __DIR__. "/../Views/header.php";
 ?>
 
@@ -13,8 +14,11 @@ include __DIR__. "/../Views/header.php";
     <?php 
     echo "Descrizione: {$details['description']} <br> Voto: {$details['vote']} <br> distanza dal centro: {$details['distance_to_center']}";
     ?>
-    
-
+</div>
+<div>
+    <?php
+    echo "<img src='{$details['img']}' alt='hotel image' class='hotel-img'>";
+    ?>
 </div>
 </main>
 

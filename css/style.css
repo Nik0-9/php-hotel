@@ -33,7 +33,7 @@ button{
     margin-top: 20px;
 }
 
-main img{
+.login-logo{
     width: 250px;
 }
 
@@ -50,10 +50,8 @@ main img{
 td, th{
     padding: 10px;
 }
-
-.belvedere{
-    background-image: url('../images/images-belvedere.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+.hotel-img{
+    width: 1500px;
+    height: 1200px;
+    margin: 0 auto;
 }

@@ -29,7 +29,7 @@ include __DIR__ . "/./Controllers/auth.php";
         ?>
         <div class="d-flex justify-content-center align-items-center mycard mt-4">
             <form id="loginform" action="login.php" method="POST">
-                <img class="mb-4" src="./images/logo.png" alt="logo">
+                <img class="mb-4 login-logo" src="./images/logo.png" alt="logo">
                 <h1 class=" mb-3 text-white">Please sign in</h1>
 
                 <div class="form-floating mb-4">

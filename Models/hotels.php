@@ -7,7 +7,8 @@ $hotels = [
         'description' => 'Hotel Belvedere Descrizione',
         'parking' => true,
         'vote' => 4,
-        'distance_to_center' => 10.4
+        'distance_to_center' => 10.4,
+        'img' => '../images/images-belvedere.jpg'
     ],
     [
         'name' => 'Hotel Futuro',
